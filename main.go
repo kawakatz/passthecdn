@@ -88,14 +88,12 @@ func check(ip string) string {
 }
 
 func main(){
-	concurrency := 20
-
 	domains := make(chan string)
 
 	var wg sync.WaitGroup
 	naked := []string{}
 
-	for i := 0; i < concurrency; i++ {
+	for i := 0; i < 20; i++ {
 		wg.Add(1)
 
 		go func() {
