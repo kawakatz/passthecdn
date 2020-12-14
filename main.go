@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"encoding/json"
-	"flag"
 	"bufio"
 	"os"
 	"sync"
