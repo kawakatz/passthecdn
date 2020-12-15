@@ -112,7 +112,7 @@ func main(){
 					continue
 				}
 				result := check(ipv4.String())
-				if result=="None"{
+				if result == "None" {
 					naked = append(naked, domain)
 				}else{
 					//fmt.Println(domain + ": " + result)
