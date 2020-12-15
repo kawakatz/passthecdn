@@ -1,6 +1,6 @@
 # passthecdn
 
-Remove subdomains which are behind CDN (CloudFlare, CloudFront, Fasty).<br>
+Remove subdomains which are behind CDN (CloudFlare, CloudFront, Fasty, Akamai).<br>
 This tool compares resolved IP and IP ranges of CDNs.<br>
 For Akamai, exec reverse DNS lookup and check the result contains "deploy.static.akamaitechnologies.com".<br>
 
