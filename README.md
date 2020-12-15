@@ -10,4 +10,4 @@ install<br>
 usage<br>
 ```➜  ~ cat subdomains.txt | passthecdn```
 
-I'm thinking about the best way how to output the result including flexibility of options.
+I'm thinking about the best way how to output the result including flexibility by options.
