@@ -8,6 +8,7 @@ import (
 	"bufio"
 	"os"
 	"sync"
+	"strings"
 )
 
 var gopath = os.Getenv("GOPATH")
@@ -81,6 +82,14 @@ func check(ip string) string {
 		_, subnet, _ := net.ParseCIDR(iprange)
 		if subnet.Contains(targetip){
 			return "Fasty"
+		}
+	}
+
+	revdns, err := net.LookupAddr(ip)
+	if err == nil {
+		revdomain := revdns[0]
+		if strings.Contains(revdomain, "deploy.static.akamaitechnologies.com") {
+			return "Akamai"
 		}
 	}
 
